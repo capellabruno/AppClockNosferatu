@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BRUNOCAPELLAPC</Machine>
+    <WindowsUser>Bruno Capella</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>c8a8ccab-3e8c-49d7-acc9-e8a565b0a1ef</PackageIdentityName>
+    <IntermediateOutputPath>E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\AppClockNosferatu.exe">
+      <PackagePath>AppClockNosferatu.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\BadgeLogo.scale-240.png">
+      <PackagePath>Assets\BadgeLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\Logo.scale-140.png">
+      <PackagePath>Assets\Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\mensagens_bom_dia.jpg">
+      <PackagePath>Assets\mensagens_bom_dia.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\Assets\virc3a1-de-noite-61.jpg">
+      <PackagePath>Assets\virc3a1-de-noite-61.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\AppClockNosferatu.xr.xml">
+      <PackagePath>AppClockNosferatu.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
