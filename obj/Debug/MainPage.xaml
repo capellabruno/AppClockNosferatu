@@ -8,37 +8,29 @@
     mc:Ignorable="d" RequestedTheme="Dark">
     <Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="#FF165527" Offset="1"/>
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FF165627" Offset="0"/>
         </LinearGradientBrush>
     </Page.Background>
 
+
     <Grid>
-        <Button x:ConnectionId='1' x:Name="BtnRodar" Content="Rodar Relógio" HorizontalAlignment="Left" Margin="15,485,0,0" VerticalAlignment="Top"                         FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D" />
-        <TextBox x:ConnectionId='2' x:Name="TxtNumeroJogadores" HorizontalAlignment="Left" Margin="175,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.465,0.515" Width="65"                                              FontSize="14" Height="40"/>
-        <TextBlock HorizontalAlignment="Left" Margin="22,49,0,0" TextWrapping="Wrap" Text="Número de Jogadores" VerticalAlignment="Top" FontSize="14"/>
+
+        <Button x:ConnectionId='1' x:Name="BtnRodar" Content="Rodar Relógio" HorizontalAlignment="Left" Margin="15,433,0,0" VerticalAlignment="Top"                         FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D" />
+        <TextBox x:ConnectionId='2' x:Name="TxtNumeroJogadores" HorizontalAlignment="Left" Margin="175,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.465,0.515" Width="65"                                              FontSize="14" Height="40" InputScope="Number"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,76,0,0" TextWrapping="Wrap" Text="Número de Jogadores" VerticalAlignment="Top" FontSize="14"/>
         <Button x:ConnectionId='3' x:Name="BtnAddNoite" Content="Adicionar Noite" HorizontalAlignment="Left" Margin="15,113,0,0" VerticalAlignment="Top"                           FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D"/>
-        <Button x:ConnectionId='4' x:Name="BtnDelNoite" Content="Remover Noite" HorizontalAlignment="Left" Margin="150,113,0,0" VerticalAlignment="Top"                           FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D"/>
-        <Image x:Name="ImgRelogioNoite" HorizontalAlignment="Left" Height="212" Margin="55,193,0,0" VerticalAlignment="Top" Width="283" Source="Assets/virc3a1-de-noite-61.jpg" ToolTipService.ToolTip="Noite" RenderTransformOrigin="0.5,0.5" >
-            <Image.Transitions>
-                <TransitionCollection>
-                    <EdgeUIThemeTransition/>
-                </TransitionCollection>
-            </Image.Transitions>
-            <Image.Projection>
-                <PlaneProjection CenterOfRotationZ="2" CenterOfRotationY="2" GlobalOffsetZ="5" GlobalOffsetY="5" GlobalOffsetX="5"/>
-            </Image.Projection>
-            <Image.RenderTransform>
-                <CompositeTransform />
-            </Image.RenderTransform>
+        <Button x:ConnectionId='4' x:Name="BtnDelNoite" Content="Remover Noite" HorizontalAlignment="Left" Margin="147,113,0,0" VerticalAlignment="Top"                           FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D"/>
+
+        <Image x:Name="ImgRelogio" HorizontalAlignment="Left" Height="212" Margin="55,193,0,0" VerticalAlignment="Top" Width="283" ToolTipService.ToolTip="Noite" RenderTransformOrigin="0.5,0.5" ManipulationMode="TranslateX">
         </Image>
-        <Image x:Name="ImgRelogioDia" HorizontalAlignment="Left" Height="302" Margin="22,185,0,0" VerticalAlignment="Top" Width="360" Source="Assets/mensagens_bom_dia.jpg" ToolTipService.ToolTip="Teste de Dia" Visibility="Collapsed" />
-        <Button x:ConnectionId='5' x:Name="BtnZerar" Content="Zerar Relógio" HorizontalAlignment="Left" Margin="139,485,0,0" VerticalAlignment="Top"                         FontSize="14"  BorderBrush="#FF836161" Background="#FF7E4D4D"/>
+
+        <Button x:ConnectionId='5' x:Name="BtnZerar" Content="Zerar Relógio" HorizontalAlignment="Left" Margin="134,433,0,0" VerticalAlignment="Top"                         FontSize="14"  BorderBrush="#FF836161" Background="#FF7E4D4D"/>
         <TextBlock x:Name="TxtRodada" HorizontalAlignment="Left" Margin="122,282,0,325" TextWrapping="Wrap" Width="148" FontSize="24" FontWeight="Bold"  FontFamily="Verdana" FontStyle="Italic">
         	<Run Text="Jogador "/>
         	<Run Text="0"/>
         </TextBlock>
-        <Button x:ConnectionId='6' x:Name="BtnNovoJogo" Content="Novo Jogo" HorizontalAlignment="Left" Margin="259,32,0,0" VerticalAlignment="Top"  FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D"                      Height="51" Width="79" />
+        <Button x:ConnectionId='6' x:Name="BtnNovoJogo" Content="Novo Jogo" HorizontalAlignment="Left" Margin="275,113,0,0" VerticalAlignment="Top"  FontSize="14" BorderBrush="#FF836161" Background="#FF7E4D4D"                      Height="51" Width="79" />
     </Grid>
 </Page>
 

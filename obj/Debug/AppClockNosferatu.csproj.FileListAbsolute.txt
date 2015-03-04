@@ -30,3 +30,12 @@ E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\obj\D
 E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\obj\Debug\qualifiers.txt.intermediate
 E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\obj\Debug\ProjectArchitectures.txt
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Advertising.Mobile.Common.winmd
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Advertising.Mobile.Common.xml
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Advertising.Mobile.Display.winmd
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Advertising.Mobile.Display.xml
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Advertising.Mobile.UI.winmd
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Advertising.Mobile.UI.xml
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Xaml.Interactions.dll
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\bin\Debug\Microsoft.Xaml.Interactivity.dll
+E:\Projetos\FreeApplication\GetEmpresa.AppClockNosferatu\AppClockNosferatu\obj\Debug\AppClockNosferatu.csproj.GenerateResource.Cache

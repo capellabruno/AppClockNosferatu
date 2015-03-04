@@ -3,23 +3,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using System.Windows;
+using Windows.UI.Xaml.Media.Imaging;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace AppClockNosferatu
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class MainPage : Page
     {
         private int MaximoNoite = 10;
@@ -58,26 +56,27 @@ namespace AppClockNosferatu
 
         private void BtnRodar_Click(object sender, RoutedEventArgs e)
         {
-
-
-
-            ImgRelogioDia.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-
-            int selecionado = this.Cartas.Pop();
-            if (selecionado == 0)
+            if (this.Cartas != null && this.Cartas.Count > 0)
             {
+                var r = Resources;
 
-                ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            }
-            else
-            {
-                ImgRelogioDia.Visibility = Windows.UI.Xaml.Visibility.Visible;
-                BtnRodar.IsEnabled = false;
-            }
-            this.Jogador++;
+                int selecionado = this.Cartas.Pop();
+                if (selecionado == 0)
+                {
+                    ImgRelogio.Source = new BitmapImage(new Uri("ms-appx:///Image/virc3a1-de-noite-61.jpg"));
+                }
+                else
+                {
+                    ImgRelogio.Source = new BitmapImage(new Uri("ms-appx:///Image/mensagens_bom_dia.jpg"));
+                    BtnRodar.IsEnabled = false;
+                }
 
-            this.ExibeJogador();
+                ImgRelogio.Visibility = Windows.UI.Xaml.Visibility.Visible;
+
+                this.Jogador++;
+
+                this.ExibeJogador();
+            }
         }
 
         private void ExibeJogador()
@@ -102,15 +101,18 @@ namespace AppClockNosferatu
 
         private void TxtNumeroJogadores_TextChanged(object sender, TextChangedEventArgs e)
         {
-            this.NoiteJogo = Convert.ToInt32(TxtNumeroJogadores.Text);
-            ((TextBox)sender).IsEnabled = false;
+            if (!string.IsNullOrEmpty(TxtNumeroJogadores.Text))
+            {
+                this.NoiteJogo = Convert.ToInt32(TxtNumeroJogadores.Text);
+                ((TextBox)sender).IsEnabled = false;
 
-            this.MontarCartas();
+                this.MontarCartas();
 
-            BtnAddNoite.IsEnabled = true;
-            BtnDelNoite.IsEnabled = true;
-            BtnRodar.IsEnabled = true;
-            BtnZerar.IsEnabled = true;
+                BtnAddNoite.IsEnabled = true;
+                BtnDelNoite.IsEnabled = true;
+                BtnRodar.IsEnabled = true;
+                BtnZerar.IsEnabled = true;
+            }
         }
 
         private void MontarCartas()
@@ -133,8 +135,7 @@ namespace AppClockNosferatu
         private void BtnZerar_Click(object sender, RoutedEventArgs e)
         {
             Cartas = new Stack<int>();
-            ImgRelogioDia.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            ImgRelogio.Source = null;
             BtnAddNoite.IsEnabled = true;
             BtnDelNoite.IsEnabled = true;
             BtnRodar.IsEnabled = true;
@@ -156,13 +157,11 @@ namespace AppClockNosferatu
             BtnRodar.IsEnabled = false;
             BtnZerar.IsEnabled = false;
             TxtNumeroJogadores.IsEnabled = true;
-            TxtNumeroJogadores.Text = string.Empty;
-            ImgRelogioDia.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             Cartas = new Stack<int>();
             this.Jogador = 0;
             this.ExibeJogador();
         }
+
 
     }
 }
