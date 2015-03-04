@@ -22,10 +22,10 @@ namespace AppClockNosferatu
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private int MaximoNoite = 8;
+        private int MaximoNoite = 10;
         private int NoiteJogo = 0;
         private Stack<int> Cartas = new Stack<int>();
-        private int Jogador=1;
+        private int Jogador = 0;
 
 
         public MainPage()
@@ -33,6 +33,12 @@ namespace AppClockNosferatu
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            BtnAddNoite.IsEnabled = false;
+            BtnDelNoite.IsEnabled = false;
+            BtnRodar.IsEnabled = false;
+            BtnZerar.IsEnabled = false;
+
         }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -53,11 +59,15 @@ namespace AppClockNosferatu
         private void BtnRodar_Click(object sender, RoutedEventArgs e)
         {
 
+
+
             ImgRelogioDia.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
 
             int selecionado = this.Cartas.Pop();
-            if (selecionado == 0) {
+            if (selecionado == 0)
+            {
+
                 ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Visible;
             }
             else
@@ -97,6 +107,10 @@ namespace AppClockNosferatu
 
             this.MontarCartas();
 
+            BtnAddNoite.IsEnabled = true;
+            BtnDelNoite.IsEnabled = true;
+            BtnRodar.IsEnabled = true;
+            BtnZerar.IsEnabled = true;
         }
 
         private void MontarCartas()
@@ -124,10 +138,30 @@ namespace AppClockNosferatu
             BtnAddNoite.IsEnabled = true;
             BtnDelNoite.IsEnabled = true;
             BtnRodar.IsEnabled = true;
-            this.Jogador = 1;
+            this.Jogador = 0;
             this.ExibeJogador();
 
             this.MontarCartas();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.LimparTelaNovoJogo();
+        }
+
+        protected void LimparTelaNovoJogo()
+        {
+            BtnAddNoite.IsEnabled = false;
+            BtnDelNoite.IsEnabled = false;
+            BtnRodar.IsEnabled = false;
+            BtnZerar.IsEnabled = false;
+            TxtNumeroJogadores.IsEnabled = true;
+            TxtNumeroJogadores.Text = string.Empty;
+            ImgRelogioDia.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            ImgRelogioNoite.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            Cartas = new Stack<int>();
+            this.Jogador = 0;
+            this.ExibeJogador();
         }
 
     }
